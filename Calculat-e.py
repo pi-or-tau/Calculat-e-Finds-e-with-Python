@@ -2,6 +2,7 @@ import math
 import decimal
 import sys
 
+location = "C:\Users\Collin\Desktop\e_python2.txt"# The location and name of the file that you want created to output to.
 
 def ask_user(boolean):
     if (boolean == True):                                                    #If True: Time n should be increased; If False: Decimal Places
@@ -38,7 +39,7 @@ def main():
     print "Changing to string."
     e_string = str(e)
     print "Writing to file."
-    with open("C:\Users\Collin\Desktop\e_python2.txt","w") as f:
+    with open(location,"w") as f:
         f.write(e_string)
     f.close()
     print "Done!"
